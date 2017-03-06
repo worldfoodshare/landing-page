@@ -9,7 +9,6 @@ body{
       -webkit-flex-direction: column;
       flex-direction: column;
 	font-family: Roboto;
-	min-width: 100vw;
 }
 #mainContent{
 	background:url(images/back.gif) no-repeat;
@@ -226,6 +225,11 @@ display: -webkit-flex;
 	font-size:12px;
 }
 @media (max-width: 768px){
+	#mainContent{
+		    flex: none;
+    -webkit-flex-basis: none;
+    flex-basis: none;	
+	}
 	header {
     min-height: 160px;
     padding: 18px 30px;
@@ -257,7 +261,7 @@ display: -webkit-flex;
      margin-right: 0; 
 	}
 	#email {
-    min-width: 346px;
+    min-width: 302px;
 	}
 	form {
     width: auto;
